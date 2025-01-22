@@ -7,7 +7,8 @@ public class Main {
         //  starPattern03(3);
         //  starPattern04(6);
         //  starPattern05(6);
-         diamondStarPattern(6);
+        //  diamondStarPattern(6);
+         rightArrowHead(6);
 
     }
 
@@ -103,6 +104,25 @@ public class Main {
     }
 
 
+    public static void rightArrowHead(int n)
+    {
+        for(int i=0 ; i<n ; i++)
+        {
+            for(int j=0; j<=i ; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        for(int i=n-1 ; i>0 ; i--)
+        {
+            for(int j=0 ; j<i ; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
 
 
 }
