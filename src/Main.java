@@ -6,7 +6,8 @@ public class Main {
         //  reverseStarPattern01();
         //  starPattern03(3);
         //  starPattern04(6);
-        starPattern05(5);
+        //  starPattern05(6);
+         diamondStarPattern(6);
 
     }
 
@@ -64,7 +65,6 @@ public class Main {
             }
             System.out.println("");
         }
-
     }
 
 
@@ -84,5 +84,25 @@ public class Main {
             System.out.println("");
         }
     }
+
+
+    public static void diamondStarPattern(int n)   // Full Triangle
+    {
+        for(int i=0; i<n ; i++)
+        {
+            for(int j=i ; j<n ; j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=0; k<(i*2)-1;k++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
+
+
 
 }
