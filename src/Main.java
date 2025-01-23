@@ -10,7 +10,8 @@ public class Main {
         // triangleStarPattern(6);
         // rightArrowHead(6);
         //  diamonShapePattern(6);
-        triangleOutline(5);
+        // triangleOutline(8);
+        reverseZPattern(5);
 
     }
 
@@ -162,7 +163,7 @@ public class Main {
 
     public static void triangleOutline(int lineCount)
     {
-            for(int i=0 ; i<lineCount ; i++)
+        for(int i=0 ; i<lineCount ; i++)
             {
                 for(int j=lineCount ; j>i ; j--)
                 {
@@ -186,11 +187,26 @@ public class Main {
                 }
 
 
-                System.out.println("");
-
-
+                System.out.println();
             }
+    }
 
+
+    public static void reverseZPattern(int lineCount)
+    {
+        for(int i=0; i<lineCount ; i++)
+        {
+            for(int j=0;j<lineCount; j++)
+            {
+                if(i==0 || i==lineCount-1 ||i==j) {
+                    System.out.print(" *");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println("");
+        }
     }
 
 }
