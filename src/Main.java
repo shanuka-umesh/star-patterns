@@ -9,7 +9,8 @@ public class Main {
         //  starPattern05(6);
         // triangleStarPattern(6);
         // rightArrowHead(6);
-         diamonShapePattern(6);
+        //  diamonShapePattern(6);
+        triangleOutline(5);
 
     }
 
@@ -158,5 +159,38 @@ public class Main {
         }
     }
 
+
+    public static void triangleOutline(int lineCount)
+    {
+            for(int i=0 ; i<lineCount ; i++)
+            {
+                for(int j=lineCount ; j>i ; j--)
+                {
+                    System.out.print(" ");
+                }
+
+                if(i==0||i==lineCount){
+                    for(int k = 0 ; k<=i ; k++)
+                    {
+                        System.out.print("* ");
+                    }
+                }
+                else{
+                    System.out.print("*");
+
+                    for (int k = 1; k  <  i; k++) {
+                        System.out.print("  ");
+                    }
+
+                    System.out.print(" *");
+                }
+
+
+                System.out.println("");
+
+
+            }
+
+    }
 
 }
