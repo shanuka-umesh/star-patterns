@@ -11,7 +11,8 @@ public class Main {
         // rightArrowHead(6);
         //  diamonShapePattern(6);
         // triangleOutline(8);
-        reverseZPattern(5);
+        //  reverseZPattern(5);
+        squreOutlinePattern(5);
 
     }
 
@@ -209,4 +210,21 @@ public class Main {
         }
     }
 
+    public static void squreOutlinePattern(int lineCount)
+    {
+        for(int raw =0 ; raw<lineCount ; raw++)
+        {
+            for(int column = 0; column<lineCount ; column++)
+            {
+                if(raw==0 || raw ==lineCount-1 || column==0 || column==lineCount-1)
+                {
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println("");
+        }
+    }
 }
